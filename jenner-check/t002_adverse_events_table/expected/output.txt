@@ -1,0 +1,28 @@
+
+  Obs                          col1        col2        col3
+-----  ----------------------------  ----------  ----------
+    1  TOTAL SUBJECTS WITH AN EVENT  7  (100.0)  8  (100.0)
+    2  GI disorders                  2  (28.6)   3  (37.5)
+    3       Diarrhea                 1  (14.3)   1  (12.5)
+    4       Nausea                   1  (14.3)   2  (25.0)
+    5  General disorders             2  (28.6)   1  (12.5)
+    6       Fatigue                  2  (28.6)   1  (12.5)
+    7  Nervous system disorders      2  (28.6)   3  (37.5)
+    8       Headache                 2  (28.6)   3  (37.5)
+    9  Skin disorders                1  (14.3)   1  (12.5)
+   10       Rash                     1  (14.3)   1  (12.5)
+
+                                                   Safety Population
+
+                              System Organ Class (%)        Placebo     Treatment Group A
+                                Preferred Term (%)           N=7        N=8
+                              TOTAL SUBJECTS WITH AN EVENT  7  (100.0)  8  (100.0)       
+                              GI disorders                  2  (28.6)   3  (37.5)        
+                                   Diarrhea                 1  (14.3)   1  (12.5)        
+                                   Nausea                   1  (14.3)   2  (25.0)        
+                              General disorders             2  (28.6)   1  (12.5)        
+                                   Fatigue                  2  (28.6)   1  (12.5)        
+                              Nervous system disorders      2  (28.6)   3  (37.5)        
+                                   Headache                 2  (28.6)   3  (37.5)        
+                              Skin disorders                1  (14.3)   1  (12.5)        
+                                   Rash                     1  (14.3)   1  (12.5)

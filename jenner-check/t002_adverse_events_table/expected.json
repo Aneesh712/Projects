@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-17T16:48:53.876514Z",
+  "_captured_run_id": "r_00d1042604df46de9fe1ccc0b4114438",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote adae (16 rows, 7 columns).",
+    "NOTE: Wrote adae1 (15 rows, 6 columns).",
+    "NOTE: PROC FREQ statement used.",
+    "NOTE: PROC SORT statement used."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

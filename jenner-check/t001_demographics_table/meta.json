@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_demographics_table",
+  "source_file": "Tas1 (1).SAS",
+  "source_blob_sha": "21f0d8650c228c8a613ce7e401e4fd311b742015",
+  "source_commit": "72f0d58c22243bb60733499e0441087566155df6",
+  "notes": "Demographic and Baseline Characteristics Summary (Table 1) for a two-arm clinical trial. Original script used PROC IMPORT to load ADSL.xlsx from a local Windows path; replaced with an inline 16-row ADSL-shaped sample (usubjid/ittfl/trt01a/trt01an/age/pltcnt/agegr1/sex/race/ethnic) carrying the same columns the macro and PROC FREQ/SUMMARY/TRANSPOSE/SQL logic reads. ODS RTF destination path redirected from a hardcoded Desktop path to a relative one. Macro logic, PROC options, and report layout unchanged from the author's script."
+}

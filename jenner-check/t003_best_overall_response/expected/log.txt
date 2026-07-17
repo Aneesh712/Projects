@@ -1,0 +1,107 @@
+NOTE: Jenner v1.5.37 (build v1.5.37+886f95a5f1.20260717T051227Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA adrs
+
+NOTE: Processing inline DATALINES (16 lines)
+
+NOTE: Read 16 rows from DATALINES.
+NOTE: Wrote adrs (16 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrs
+
+
+NOTE: Read 16 rows from adrs.
+NOTE: Wrote adrs (16 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrs1
+
+
+NOTE: Read 16 rows from adrs.
+NOTE: Wrote adrs1 (32 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: Output dataset freq has 15 observations and 4 variables.
+NOTE: PROC FREQ statement used.
+NOTE: PROC SORT data=freq
+
+NOTE: Read 15 rows from freq.
+NOTE: Wrote freq (15 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=freq
+
+NOTE: Created 5 rows.
+NOTE: Output written to /tmp/work/r_771ab50b4faa4bb2bb032d2274cc721f/work/3864b79f-5d46-4a72-8e59-ffea10067adc/tran1.avro.
+NOTE: DATA tran1
+
+
+NOTE: Read 5 rows from tran1.
+NOTE: Wrote tran1 (5 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Macro variable BIGN1 = 8
+NOTE: Macro variable BIGN2 = 8
+NOTE: Macro variable BIGN3 = 16
+NOTE: PROC SQL statement used.
+8 8 16
+NOTE: DATA tran2
+
+
+NOTE: Read 4 rows from tran1.
+NOTE: Wrote tran2 (4 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA final
+
+
+NOTE: Read 4 rows from tran2.
+NOTE: Wrote final (4 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA final3
+
+
+NOTE: Read 4 rows from final.
+NOTE: Wrote final3 (4 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=final3
+
+NOTE: Read 4 rows from final3.
+NOTE: Wrote final3 (4 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA final4
+
+
+NOTE: Read 4 rows from final3.
+NOTE: Wrote final4 (4 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=final4
+
+NOTE: PROC PRINT completed: 4 observations printed, 4 variables
+NOTE: Option TITLE changed to Best Overall Response per Investigator.
+NOTE: Option TITLE2 changed to All Treated Subjects.
+NOTE: PROC REPORT data=final3
+
+NOTE: PROC REPORT output 4 observations with 5 variables.
+
+NOTE: Read 4 rows from final3.
+NOTE: Wrote (console) (4 rows, 5 columns).
+NOTE: PROC REPORT elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: ODS RTF: wrote report to /tmp/work/r_771ab50b4faa4bb2bb032d2274cc721f/BOR_Tab.rtf.

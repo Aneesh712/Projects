@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_adverse_events_table",
+  "source_file": "tas2.sas",
+  "source_blob_sha": "0ff35407330a3c08c72985a4715305f368474367",
+  "source_commit": "72f0d58c22243bb60733499e0441087566155df6",
+  "notes": "Adverse Event summary table by System Organ Class / Preferred Term for a two-arm safety population. Original script used PROC IMPORT to load ADAE.xls from a local Windows path with an Excel range; replaced with an inline 16-row ADAE-shaped sample (usubjid/trta/trtan/aedecod/aebodsys/aetoxgr/saffl). ODS RTF destination redirected to a relative path. One line of dead code in the source (`proc sort data=freq_a;`, referencing a dataset never created and whose output is never read downstream) was omitted rather than invented, since it does no useful work in the original either; every other statement is unchanged."
+}
