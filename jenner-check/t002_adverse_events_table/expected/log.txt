@@ -1,0 +1,174 @@
+NOTE: Jenner v1.5.37 (build v1.5.37+886f95a5f1.20260717T051227Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA adae
+
+NOTE: Processing inline DATALINES (16 lines)
+
+NOTE: Read 16 rows from DATALINES.
+NOTE: Wrote adae (16 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adae
+
+
+NOTE: Read 16 rows from adae.
+NOTE: Wrote adae (16 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adae1
+
+
+NOTE: Read 15 rows from adae.
+NOTE: Wrote adae1 (15 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=adae1
+
+NOTE: Read 15 rows from adae1.
+NOTE: Wrote sort1 (15 rows, 6 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA waesys
+
+
+NOTE: Read 15 rows from sort1.
+NOTE: Wrote waesys (15 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: Output dataset freq_aebodsys has 8 observations and 4 variables.
+NOTE: PROC FREQ statement used.
+NOTE: PROC SORT data=freq_aebodsys
+
+NOTE: Read 8 rows from freq_aebodsys.
+NOTE: Wrote freq_aebodsys (8 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=freq_aebodsys
+
+NOTE: Created 4 rows.
+NOTE: Output written to /tmp/work/r_00d1042604df46de9fe1ccc0b4114438/work/736076be-5e86-4a90-b6fc-82011f96d1f9/ds1.avro.
+NOTE: DATA ds1
+
+
+NOTE: Read 4 rows from ds1.
+NOTE: Wrote ds1 (4 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=adae1
+
+NOTE: Read 15 rows from adae1.
+NOTE: Wrote sort2 (15 rows, 6 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA waedecod
+
+
+NOTE: Read 15 rows from sort2.
+NOTE: Wrote waedecod (15 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: Output dataset freq_aedecod has 10 observations and 5 variables.
+NOTE: PROC FREQ statement used.
+NOTE: PROC SQL 
+
+NOTE: Table all created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SORT data=freq_aedecod
+
+NOTE: Read 10 rows from freq_aedecod.
+NOTE: Wrote freq_aedecod (10 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=freq_aedecod
+
+NOTE: Created 5 rows.
+NOTE: Output written to /tmp/work/r_00d1042604df46de9fe1ccc0b4114438/work/736076be-5e86-4a90-b6fc-82011f96d1f9/ds2.avro.
+NOTE: DATA ds2
+
+
+NOTE: Read 5 rows from ds2.
+NOTE: Wrote ds2 (5 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA stack
+
+
+NOTE: Read 4 rows from ds1.
+NOTE: Read 9 rows from ds2.
+NOTE: Wrote stack (9 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=stack
+
+NOTE: Read 9 rows from stack.
+NOTE: Wrote stack (9 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA stack2
+
+
+NOTE: Read 9 rows from stack.
+NOTE: Wrote stack2 (9 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Macro variable BIGN1 = 7
+NOTE: Macro variable BIGN2 = 8
+NOTE: PROC SQL statement used.
+7 8
+NOTE: PROC SQL 
+
+NOTE: Table all created.
+NOTE: PROC SQL statement used.
+NOTE: PROC TRANSPOSE data=all
+
+NOTE: Created 1 rows.
+NOTE: Output written to /tmp/work/r_00d1042604df46de9fe1ccc0b4114438/work/736076be-5e86-4a90-b6fc-82011f96d1f9/all1.avro.
+NOTE: DATA all1
+
+
+NOTE: Read 1 rows from all1.
+NOTE: Wrote all1 (1 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA stack3
+
+
+NOTE: Read 1 rows from all1.
+NOTE: Read 10 rows from stack2.
+NOTE: Wrote stack3 (10 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA final
+
+
+NOTE: Read 10 rows from stack3.
+NOTE: Wrote final (10 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=final
+
+NOTE: PROC PRINT completed: 10 observations printed, 3 variables
+NOTE: Option TITLE changed to Safety Population.
+NOTE: PROC REPORT data=final
+
+NOTE: PROC REPORT output 10 observations with 3 variables.
+
+NOTE: Read 10 rows from final.
+NOTE: Wrote (console) (10 rows, 3 columns).
+NOTE: PROC REPORT elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option FOOTNOTE changed to MedDRA Version18.0.
+NOTE: ODS RTF: wrote report to /tmp/work/r_00d1042604df46de9fe1ccc0b4114438/rep2.rtf.

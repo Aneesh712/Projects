@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-17T16:47:16.733451Z",
+  "_captured_run_id": "r_3d8fa381998b477896cb9046dbf2fd71",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote adsl (16 rows, 10 columns).",
+    "NOTE: Wrote adsl01 (30 rows, 10 columns).",
+    "NOTE: PROC MEANS statement used.",
+    "NOTE: PROC TRANSPOSE data=sort1_1"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

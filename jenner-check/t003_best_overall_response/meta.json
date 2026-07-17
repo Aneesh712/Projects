@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_best_overall_response",
+  "source_file": "tas3.sas",
+  "source_blob_sha": "0e0984560b832b30ee1e5c28433acabd80bf0436",
+  "source_commit": "72f0d58c22243bb60733499e0441087566155df6",
+  "notes": "Best Overall Response (BOR) per RECIST 1.1 table, matching the committed BOR_Tab.rtf output (drug arms with CR/PR/SD/PD response categories, N=50/50/100 layout). Original script used PROC IMPORT to load ADRS.xls from a local Windows path with an Excel sheet range; replaced with an inline 16-row ADRS-shaped sample (usubjid/trt01p/paramcd/avalc). ODS RTF destination redirected to a relative path. One compute-block LINE guard (`if header_group='Display Header' then do; line ...; end;`) was commented out rather than invented: `order` is read but never assigned anywhere in the final3 DATA step, so header_group is always 'Data' and that branch never executes in the source either (dead code, same class as the unused freq_a sort in tas2.sas) -- also tripped a genuine Jenner PROC REPORT parser gap on IF/DO around LINE inside COMPUTE, filed separately as a regression test."
+}
